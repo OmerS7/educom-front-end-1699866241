@@ -1,0 +1,14 @@
+button{
+    background-color:$color_redorange;
+    color: $color_white;
+    font-weight: bold;
+    border: none;
+    padding: 17px;
+    width: 185px;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: $color_black;
+    color: $color_white;
+}
