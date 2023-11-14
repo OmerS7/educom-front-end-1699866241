@@ -1,0 +1,21 @@
+$base-font-size: 15px;
+$body-font-family: 'Poppins', sans-serif;
+
+$body-margin: 80px 160px;
+
+.navigation_bar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin-bottom: 40px;
+}
+  
+.navigation_bar img {
+   cursor: pointer;
+  }
+
+body {
+    margin: $body-margin;
+    font-family: $body-font-family;
+    font-size: $base-font-size;
+  }
