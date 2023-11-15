@@ -1,0 +1,73 @@
+.padding {
+    background-color: black;
+    margin-left: auto;
+    padding: 10px;
+    max-height: 500px; /* Pas deze waarde aan naar wens */
+  }
+  
+  .subheading {
+    font-size: 35px;
+    color: hsl(35, 77%, 62%);
+  }
+
+  .text_new {
+    color: gray;
+  }
+  
+  .numbers {
+    color: rgb(157, 157, 157);
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  
+  .line-height .title_paragraph {
+    line-height: 1;
+  }
+
+  .number_text {
+    color: gray;
+  }
+  
+  .testimonial_grid_numbers img {
+    max-width: 120px;
+  }
+  
+  .testimonial_grid_numbers .flex {
+    overflow: hidden; /* Zorgt ervoor dat de container de hoogte van de inhoud behoudt */
+  }
+  
+  .testimonial_grid_numbers img {
+    float: left;
+    margin-right: 10px; /* Voeg wat ruimte toe tussen het plaatje en de tekst */
+    max-width: 120px;
+  }
+  
+  .testimonial_grid_numbers .line-height {
+    overflow: hidden; /* Zorgt ervoor dat de hoogte van de container correct wordt berekend */
+  }
+  
+  .testimonial_grid_numbers h2,
+  .testimonial_grid_numbers .line-height p {
+    margin: 0; /* Verwijder de standaardmarges om ongewenste ruimte te voorkomen */
+    line-height: 2;
+  }
+
+.title_paragraph {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+  
+    &:hover {
+      color: hsl(35, 77%, 62%);
+    }
+  }
+
+  .title_block {
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+  
+    &:hover {
+      color: hsl(5, 85%, 63%);
+    }
+  }
