@@ -1,5 +1,7 @@
-button{
-    background-color:$color_redorange;
+@import "colors";
+
+button {
+    background-color: $color_lightorange;
     color: $color_white;
     font-weight: bold;
     border: none;
@@ -7,8 +9,9 @@ button{
     width: 185px;
     letter-spacing: 5px;
     cursor: pointer;
-}
-button:hover{
-    background-color: $color_black;
-    color: $color_white;
-}
+  
+    &:hover {
+      background-color: $color_black;
+      color:$color_white;
+    }
+  }
