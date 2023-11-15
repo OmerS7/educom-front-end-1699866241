@@ -1,163 +1,127 @@
-body{
-    margin: 80px 160px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+.testimonial_grid_col_2 {
+  grid-column: span 2;
 }
 
-/*navigation_bar*/
-.navigation_bar{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    margin-bottom: 40px;
+.testimonial_grid_row_2 {
+  grid-row: span 2;
 }
 
-.navigation_bar img{
-    cursor: pointer;
-}
-/*navigation_bar*/
-
-
-
-.testimonial_grid_col_2{
-    grid-column: span 2;
+.testimonial {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.testimonial_grid_row_2{
-    grid-row: span 2;
+button {
+  background-color: hsl(35, 77%, 62%);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 17px;
+  width: 185px;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: black;
+  color: white;
 }
 
-/* grid_main*/
-.testimonial{
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: 
-    repeat(3, 1fr);
+.navigation_bar {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  margin-bottom: 40px;
 }
-/* grid_main*/
-
-
-
-.text li {
-    list-style: none;
-    padding-left: 40px;
-    float: right;
-    color: gray;
-    cursor: pointer;
+.navigation_bar img {
+  cursor: pointer;
 }
 
-.text li:hover{
-    color: hsl(5, 85%, 63%)
+body {
+  margin: 80px 160px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
 }
 
-.testimonial_grid{
-    display: grid;
+.padding {
+  background-color: black;
+  margin-left: auto;
+  padding: 10px;
+  max-height: 500px; /* Pas deze waarde aan naar wens */
 }
 
-.first_pic img{
-    max-width: 730px;
+.subheading {
+  font-size: 35px;
+  color: hsl(35, 77%, 62%);
 }
 
-.heading {
-    font-size: 50px;
-    font: weight 800px;
-    line-height: 1;
+.text_new {
+  color: gray;
 }
 
-.paragraph{
-    color: gray;
+.numbers {
+  color: rgb(157, 157, 157);
+  font-size: 30px;
+  font-weight: bolder;
 }
 
-button{
-    background-color: hsl(5, 85%, 63%);
-    color: white;
-    font-weight: bold;
-    border: none;
-    padding: 17px;
-    width: 185px;
-    letter-spacing: 5px;
-    cursor: pointer;
-}
-button:hover{
-    background-color: black;
-    color: white;
+.line-height .title_paragraph {
+  line-height: 1;
 }
 
-/* .testimonial_grid_black{
-} */
-
-.padding{
-    background-color: black;
-    margin-left: auto;
-    padding: 10px;       
-    max-height: 500px; /* Pas deze waarde aan naar wens */
-
-}
-
-.subheading{
-    font-size: 35px;
-    color: hsl(35, 77%, 62%)
-}
-
-.line-height .title_paragraph{
-    line-height: 1;
-}
-
-.title_paragraph{
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.title_paragraph:hover{
-    color: hsl(35, 77%, 62%);
-}
-
-.text_new{
-    color: gray;
-}
-
-.numbers{
-    color: rgb(157, 157, 157);
-    font-size: 30px;
-    font-weight: bolder;
-}
-
-.title_block{
-    font-weight: bold;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.title_block:hover{
-    color: hsl(5, 85%, 63%);
-}
-
-.number_text{
-    color: gray;
-}
-
-.testimonial_grid_numbers img{
-max-width: 120px;
-}
-
-.testimonial_grid_numbers .flex {
-    overflow: hidden; /* Zorgt ervoor dat de container de hoogte van de inhoud behoudt */
+.number_text {
+  color: gray;
 }
 
 .testimonial_grid_numbers img {
-    float: left;
-    margin-right: 10px; /* Voeg wat ruimte toe tussen het plaatje en de tekst */
-    max-width: 120px;
+  max-width: 120px;
 }
 
+.testimonial_grid_numbers .flex {
+  overflow: hidden; /* Zorgt ervoor dat de container de hoogte van de inhoud behoudt */
+}
+
+.testimonial_grid_numbers img {
+  float: left;
+  margin-right: 10px; /* Voeg wat ruimte toe tussen het plaatje en de tekst */
+  max-width: 120px;
+}
 
 .testimonial_grid_numbers .line-height {
-    overflow: hidden; /* Zorgt ervoor dat de hoogte van de container correct wordt berekend */
+  overflow: hidden; /* Zorgt ervoor dat de hoogte van de container correct wordt berekend */
 }
 
 .testimonial_grid_numbers h2,
 .testimonial_grid_numbers .line-height p {
-    margin: 0; /* Verwijder de standaardmarges om ongewenste ruimte te voorkomen */
-    line-height: 2;
+  margin: 0; /* Verwijder de standaardmarges om ongewenste ruimte te voorkomen */
+  line-height: 2;
 }
+
+.title_paragraph {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  cursor: pointer;
+}
+.title_paragraph:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+.title_block {
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+.title_block:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+.text li {
+  list-style: none;
+  padding-left: 40px;
+  float: right;
+  color: gray;
+  cursor: pointer;
+}
+.text li:hover {
+  color: hsl(5, 85%, 63%);
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,11 @@
+.text li {
+    list-style: none;
+    padding-left: 40px;
+    float: right;
+    color: gray;
+    cursor: pointer;
+  
+    &:hover {
+      color: hsl(5, 85%, 63%);
+    }
+  }
