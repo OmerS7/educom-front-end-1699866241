@@ -1,0 +1,14 @@
+.testimonial_grid_col_2 {
+    grid-column: span 2;
+  }
+  
+  .testimonial_grid_row_2 {
+    grid-row: span 2;
+  }
+  
+  // grid_main
+  .testimonial {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
