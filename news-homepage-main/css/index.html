@@ -31,6 +31,19 @@
       <li>New</li>
       <li>Home</li>
     </nav>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+      <img class="icon-menu-svg" src="images/icon-menu.svg" alt="hamburger-menu">
+      <img class="icon-menu-close-svg" src="images/icon-menu-close.svg" alt="close-menu">
+    </div>
+    <div class="menu-container">
+      <nav class="text">
+        <li>Categories</li>
+        <li>Trending</li>
+        <li>Popular</li>
+        <li>New</li>
+        <li>Home</li>
+      </nav>
+    </div>
   </div>
 
   <main class="testimonial">
@@ -38,7 +51,10 @@
     <article class="testimonial_grid_col_2">
         <div class="flex">
             <div class="first_pic">
-                <img src="images/image-web-3-desktop.jpg" alt="blocks">
+                <img class="web-image" src="images/image-web-3-desktop.jpg" alt="blocks">
+            </div>
+            <div class="mobile-image">
+            <img  src="images/image-web-3-mobile.jpg" alt="blocks_mobile">
             </div>
         </div>
     </article>
@@ -157,5 +173,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Omer</a>.
   </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
