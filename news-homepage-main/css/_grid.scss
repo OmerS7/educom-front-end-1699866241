@@ -1,8 +1,4 @@
-.testimonial_grid_col_2 {
-    grid-column: span 2;
-  }
-  
-  .testimonial_grid_row_2 {
+.testimonial_grid_row_2:nth-child(2) {
     grid-row: span 2;
   }
   
@@ -11,4 +7,118 @@
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
+  }
+  
+  @media (min-width: 50em) {
+    .testimonial_grid_col_2 {
+      grid-column: span 2;
+    }
+  
+    .testimonial {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .mobile-image, .menu-container {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mobile-image {
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  
+    body {
+      margin: 80px 20px;
+    }
+  
+    .navigation_bar {
+      grid-template-columns: 1fr;
+    }
+  
+    .text {
+      display: none;
+    }
+    .menu-container.show-menu .text {
+        display: block; /* Toon menu-items wanneer het menu wordt geopend */
+      }
+  
+    .navigation_bar .hamburger-menu {
+      display: block;
+    }
+  
+    .logo {
+      text-align: center;
+    }
+  
+    .testimonial {
+      grid-template-columns: 1fr;
+    }
+  
+    .testimonial_grid_col_2,
+    .testimonial_grid_row_2 {
+      margin-left: 0;
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+  
+    .heading {
+      font-size: 30px;
+    }
+  
+    .line-height,
+    .title_block p {
+      font-size: 10px;
+    }
+  
+    .title_block {
+      font-size: 10px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  
+    .first_pic {
+      .web-image {
+        display: none;
+      }
+    }
+  
+    .menu-container {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      z-index: 1;
+    }
+  
+    .menu-container.show-menu {
+      display: block;
+    }
+  
+    .icon-menu-close-svg {
+      display: none;
+    }
+  
+    .hide-icon {
+      display: none;
+    }
+  
+    .show-menu .icon-menu-svg {
+      display: none;
+    }
+  
+    .show-menu .icon-menu-close-svg {
+      display: block;
+    }
   }
